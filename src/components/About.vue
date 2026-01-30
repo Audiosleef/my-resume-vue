@@ -24,25 +24,27 @@ const showDogModal = ref(false)
         </p>
       </div>
 
-     <!-- Quick Facts -->
-<div>
-  <h3 class="text-xl font-semibold text-gray-800 mb-4">Quick Facts</h3>
-  <ul class="space-y-2 text-gray-600">
-    <li class="flex items-center">
-      <span class="font-medium w-24">Location:</span>
-      <span>Jette, Belgium</span>
-    </li>
-    <li class="flex items-center">
-      <span class="font-medium w-24">Email:</span>
-      <span>info@jensvanherp.be</span>
-    </li>
-    <li class="flex items-center">
-      <span class="font-medium w-24">Languages:</span>
-      <span>Dutch, English</span>
-    </li>
-  </ul>
-</div>
+      <!-- Quick Facts -->
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Quick Facts</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-center">
+            <span class="font-medium w-24">Location:</span>
+            <span>Jette, Belgium</span>
+          </li>
+          <li class="flex items-center">
+            <span class="font-medium w-24">Email:</span>
+            <span>info@jensvanherp.be</span>
+          </li>
+          <li class="flex items-center">
+            <span class="font-medium w-24">Languages:</span>
+            <span>Dutch, English</span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- Dog Modal - moved outside the grid -->
     <div
       v-if="showDogModal"
       class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
