@@ -2,7 +2,7 @@
 
 <template>
   <div class="bg-gradient-to-r from-[#2c3e50] to-[#42b883] text-white">
-    <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-6xl mx-auto px-4 py-16 mb-8">
       <div class="text-center">
         <img
           src="/profile.jpg"
