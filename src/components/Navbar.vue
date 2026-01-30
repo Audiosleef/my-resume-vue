@@ -31,7 +31,7 @@ const handleSectionChange = (section: string) => {
         <div class="text-xl font-bold text-gray-800">Jens Van Herp</div>
 
         <!-- Desktop menu -->
-        <div class="hidden md:flex space-x-6">
+        <div class="hidden md:flex space-x-6 items-center">
           <button
             v-for="item in navItems"
             :key="item.key"
@@ -44,6 +44,15 @@ const handleSectionChange = (section: string) => {
           >
             {{ item.label }}
           </button>
+
+          <!-- Link to React version -->
+
+          <a
+            href="https://jensvanherp.be"
+            class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors text-sm"
+          >
+            React Version
+          </a>
         </div>
 
         <!-- Mobile hamburger button -->
@@ -88,6 +97,15 @@ const handleSectionChange = (section: string) => {
           >
             {{ item.label }}
           </button>
+
+          <!-- Link to React version in mobile menu -->
+
+          <a
+            href="https://jensvanherp.be"
+            class="block w-full text-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+          >
+            React Version
+          </a>
         </div>
       </div>
     </div>
