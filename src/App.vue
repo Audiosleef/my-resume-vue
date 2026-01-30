@@ -21,7 +21,7 @@ const handleSectionChange = (section: string) => {
     <Navbar @section-change="handleSectionChange" />
     <Banner />
 
-    <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="max-w-6xl mx-auto px-4 py-16">
       <About v-if="activeSection === 'about'" />
       <Experience v-if="activeSection === 'experience'" />
       <Education v-if="activeSection === 'education'" />
