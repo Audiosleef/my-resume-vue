@@ -1,11 +1,32 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import Navbar from './components/Navbar.vue'
+import Banner from './components/Banner.vue'
+import About from './components/About.vue'
+import Experience from './components/Experience.vue'
+import Education from './components/Education.vue'
+import Skills from './components/Skills.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
+
+const activeSection = ref('about')
+
+const handleSectionChange = (section: string) => {
+  activeSection.value = section
+}
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <div class="min-h-screen bg-gray-50">
+    <Navbar @section-change="handleSectionChange" />
+    <Banner />
 
-<style scoped></style>
+    <About v-if="activeSection === 'about'" />
+    <Experience v-if="activeSection === 'experience'" />
+    <Education v-if="activeSection === 'education'" />
+    <Skills v-if="activeSection === 'skills'" />
+    <Contact v-if="activeSection === 'contact'" />
+
+    <Footer />
+  </div>
+</template>
