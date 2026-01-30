@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="bg-gradient-to-r from-[#2c3e50] to-[#42b883] text-white">
+  <div class="bg-gradient-to-r from-[#2c3e50] to-[#42b883] text-white">
     <div class="max-w-6xl mx-auto px-4 py-16">
       <div class="text-center">
         <img
@@ -19,5 +19,5 @@
         </p>
       </div>
     </div>
-  </section>
+  </div>
 </template>

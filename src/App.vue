@@ -21,11 +21,13 @@ const handleSectionChange = (section: string) => {
     <Navbar @section-change="handleSectionChange" />
     <Banner />
 
-    <About v-if="activeSection === 'about'" />
-    <Experience v-if="activeSection === 'experience'" />
-    <Education v-if="activeSection === 'education'" />
-    <Skills v-if="activeSection === 'skills'" />
-    <Contact v-if="activeSection === 'contact'" />
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <About v-if="activeSection === 'about'" />
+      <Experience v-if="activeSection === 'experience'" />
+      <Education v-if="activeSection === 'education'" />
+      <Skills v-if="activeSection === 'skills'" />
+      <Contact v-if="activeSection === 'contact'" />
+    </div>
 
     <Footer />
   </div>
