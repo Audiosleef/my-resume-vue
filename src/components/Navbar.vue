@@ -49,7 +49,7 @@ const handleSectionChange = (section: string) => {
 
           <a
             href="https://jensvanherp.be"
-            class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors text-sm"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
           >
             React Version
           </a>
@@ -97,12 +97,11 @@ const handleSectionChange = (section: string) => {
           >
             {{ item.label }}
           </button>
-
           <!-- Link to React version in mobile menu -->
 
           <a
             href="https://jensvanherp.be"
-            class="block w-full text-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+            class="block w-full text-left px-4 py-2 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900"
           >
             React Version
           </a>
