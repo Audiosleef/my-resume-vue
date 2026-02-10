@@ -8,6 +8,7 @@ import Education from './components/Education.vue'
 import Skills from './components/Skills.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import Portfolio from './components/Portfolio.vue'
 
 const activeSection = ref('about')
 
@@ -26,6 +27,7 @@ const handleSectionChange = (section: string) => {
       <Experience v-if="activeSection === 'experience'" />
       <Education v-if="activeSection === 'education'" />
       <Skills v-if="activeSection === 'skills'" />
+      <Portfolio v-if="activeSection === 'portfolio'" />
       <Contact v-if="activeSection === 'contact'" />
     </div>
 

@@ -9,6 +9,7 @@ const navItems = [
   { key: 'experience', label: 'Experience' },
   { key: 'education', label: 'Education' },
   { key: 'skills', label: 'Skills' },
+  { key: 'portfolio', label: 'Portfolio' },
   { key: 'contact', label: 'Contact' },
 ]
 
@@ -44,15 +45,6 @@ const handleSectionChange = (section: string) => {
           >
             {{ item.label }}
           </button>
-
-          <!-- Link to React version -->
-
-          <a
-            href="https://jensvanherp.be"
-            class="text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            React Version
-          </a>
         </div>
 
         <!-- Mobile hamburger button -->
@@ -97,14 +89,6 @@ const handleSectionChange = (section: string) => {
           >
             {{ item.label }}
           </button>
-          <!-- Link to React version in mobile menu -->
-
-          <a
-            href="https://jensvanherp.be"
-            class="block w-full text-left px-4 py-2 rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-          >
-            React Version
-          </a>
         </div>
       </div>
     </div>
